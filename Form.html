@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h2 style="text-align: center;">Sign Up Form</h2>
+        <hr><br>
+        <label for="user"><b>Name</b> :</label>
+        <input type="text" name="username" id="user" placeholder="User Name"><br><br>
+
+        <label for="email"><b>E-mail</b> :</label>
+        <input type="email" name="usermail" id="email" placeholder="Email Address"><br><br>
+
+        <label for="password"><b>Passsword</b> :</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password"><br><br>
+
+        <label for="Phone-No"><b>Mobile No</b> :</label>
+        <select name="code">
+            <option>+880</option>
+            <option>+990</option>
+            <option>+110</option>
+        </select>
+        <input type="number" name="phone-no" id="Phone-No" placeholder="Enter your mobile No" required><br><br>
+
+        <label for="country"><b>Country</b> :</label>
+       <input list="con"><br><br>
+       <datalist id="con">
+        <option>Bangladesh</option>
+        <option>India</option>
+        <option>Pakistan</option>
+        <option>Nepal</option>
+        <option>Japan</option>
+        <option>Singapore</option>
+       </datalist>
+
+
+        <label><b>Gender</b> :</label>
+        <input type="radio">Male
+        <input type="radio">Female
+        <input type="radio">Others<br><br>
+
+        <label for="date"><b>Date Of Birth</b> :</label>
+        <input type="date" name="DOB" id="date"><br><br>
+
+        <label for="Time"><b>Time</b> :</label>
+        <input type="time" name="time" id="Time"><br><br>
+
+        <label for="colour"><b>colour</b> :</label>
+        <input type="color" name="colour" id="colour"><br><br>
+
+        
+        <label for="file"><b>Photo</b> :</label>
+        <input type="file" name="photo" id="file"><br><br>
+
+        <label for="Marry"><b>Marital Status</b> :</label>
+        <input type="checkbox">Married
+        <input type="checkbox">UnMarried
+        <input type="checkbox">Devorced
+        <input type="checkbox">Widow/Widower<br><br>
+
+        <textarea name="Comment" id="" cols="30" rows="10" placeholder="Comment Here"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="submit" value="Reset">
+    </form>
+
+</body>
+
+</html>
