@@ -1,0 +1,34 @@
+h1{
+    color:rgb(237, 237, 237);
+    text-align: center;
+    background-color: rgb(255, 140, 0);
+}
+body{
+    background-color: rgb(0, 0, 0);
+    /*background-image: url(Background.jpg);*/
+}
+.p1{
+    border-width: 2px;
+    border-style: dashed;
+    border-radius:15px ;
+    border-color:goldenrod;
+    color:rgb(128, 255, 0) ;
+}
+.p2{
+    border-width: 2px;
+    border-style: dotted;
+    border-color:greenyellow;
+    color:rgb(255, 179, 0) ;
+}
+#p3{
+    color:rgb(111, 111, 225);
+    border-width: 5px;
+    border-radius:10px ;
+    border-style: groove;
+}
+p{
+    border-width: 2px;
+    border-style: solid;
+    border-color:goldenrod;
+    color:rgb(248, 248, 248) ;
+}
