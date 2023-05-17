@@ -1,0 +1,22 @@
+body{
+    background-image: url(Background.jpg);
+}
+div{
+    background-color: rgb(43, 226, 177);
+    width:800;
+    height:600;
+    margin:auto;
+    padding:50px;
+
+}
+#d1{
+    background-color: rgb(177, 226, 43);
+    width:800;
+    height:600;
+    margin:10 20 30 50;
+    padding:100px;
+
+}
+p{
+color:rgb(42, 4, 4)
+}

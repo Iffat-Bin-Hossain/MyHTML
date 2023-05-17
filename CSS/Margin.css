@@ -1,0 +1,26 @@
+div{
+    width: 500px;
+    height:400px;
+    background-color: aqua;
+    border: 2px solid red;
+    margin-top:200px;
+    margin-left:80px;
+}
+.d1{
+    border-width: 2px;
+    border-style: solid;
+    border-color:goldenrod;
+    color:rgb(0, 0, 0) ;
+}
+p{
+color:blueviolet
+}
+/*
+div{
+    width: 500px;
+    height:400px;
+    background-color: aqua;
+    border: 2px solid red;
+    margin:auto;
+
+}*/
