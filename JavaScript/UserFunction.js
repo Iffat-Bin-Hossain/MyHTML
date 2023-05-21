@@ -1,3 +1,4 @@
+console.log(Sum(20,30))
 function Sum(a,b){
     return a+b
 }
