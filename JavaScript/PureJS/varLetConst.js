@@ -17,3 +17,9 @@ console.log(y)
  //using const does not permit neither reassign nor redeclare 
 const z=30
 console.log(z)
+
+const obj={name:'nabil'}
+// obj={age:20}
+// console.log(obj.age)//not allowed
+obj.name='neyat'
+console.log(obj.name)
