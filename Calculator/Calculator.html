@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="Console"></td>
+            </tr>
+            <tr>
+                <td><button class="Special" type="button" onclick="Clear()">Clr</button></td>
+                <td><button type="button" onclick="Calculate('(')">(</button></td>
+                <td><button type="button" onclick="Calculate(')')">)</button></td>
+                <td><button class="Special" type="button" onclick="Off()">Off</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="Calculate('7')">7</button></td>
+                <td><button type="button" onclick="Calculate('8')">8</button></td>
+                <td><button type="button" onclick="Calculate('9')">9</button></td>
+                <td><button type="button" onclick="Calculate('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="Calculate('4')">4</button></td>
+                <td><button type="button" onclick="Calculate('5')">5</button></td>
+                <td><button type="button" onclick="Calculate('6')">6</button></td>
+                <td><button type="button" onclick="Calculate('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="Calculate('1')">1</button></td>
+                <td><button type="button" onclick="Calculate('2')">2</button></td>
+                <td><button type="button" onclick="Calculate('3')">3</button></td>
+                <td><button type="button" onclick="Calculate('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="Calculate('0')">0</button></td>
+                <td><button type="button" onclick="Calculate('.')">.</button></td>
+                <td><button type="button" onclick="Calculate('/')">/</button></td>
+                <td><button type="button" onclick="ShowResult()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function Clear() {
+            let console = document.getElementById("Console");
+            console.value = "";
+
+        }
+        function Calculate(newValue) {
+            let console = document.getElementById("Console");
+            console.value += newValue;
+        }
+        function ShowResult() {
+            let console = document.getElementById("Console");
+            var x = console.value;
+            var v = eval(x);
+            console.value = v;
+        }
+        function Off() {
+            window.close();
+        }
+    </script>
+
+</body>
+
+</html>
