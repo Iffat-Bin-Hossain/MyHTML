@@ -14,33 +14,45 @@
     <div class="container">
         <div class="form-box">
             <h1 id="title">Sign Up</h1>
+            
+            
             <form>
-                <div class="Input-field" id="namefield">
+                <div class="Inputfield" id="namefield">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="Enter Your Name">
                 </div><br>
-                <div class="Input-field">
+                <div class="Inputfield">
                     <i class="fa-sharp fa-solid fa-envelope"></i>
                     <input type="email" placeholder="Enter Your E-mail">
                 </div><br>
-                <div class="Input-field">
+                <div class="Inputfield">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" placeholder="Enter New password">
                 </div>
                 <div class="Recover">
-                    <p>forgotten password? <a href="https://security.harvard.edu/use-strong-passwords">click here</a></p>
+                    <p>forgotten password? <a href="https://security.harvard.edu/use-strong-passwords">click here</a>
+                    </p>
                 </div>
                 <div class="Buttonfield">
                     <button type="button" id="SignUp">Sign Up</button>
                     <button type="button" class="Disable" id="SignIn">Sign In</button>
                 </div>
                 <script>
-                    let signUpButton=document.getElementById("SignUp");
-                    let signInButton=document.getElementById("SignIn");
-                    let namefieldButton=document.getElementbyId("namefield");
-                    let title=document.getElementById("title");
-                    signInButton.onclick=function(){
-                        namefieldButton.style.maxHeight="0";
+                    let signUpButton = document.getElementById("SignUp");
+                    let signInButton = document.getElementById("SignIn");
+                    let namefieldButton = document.getElementById("namefield");
+                    let title = document.getElementById("title");
+                    signInButton.onclick = function () {
+                        namefieldButton.style.maxHeight = "0";
+                        title.innerHTML = "Sign In";
+                        signUpButton.classList.add("Disable");
+                        signInButton.classList.remove("Disable");
+                    }
+                    signUpButton.onclick = function () {
+                        namefieldButton.style.maxHeight = "60px";
+                        title.innerHTML = "Sign Up";
+                        signInButton.classList.add("Disable");
+                        signUpButton.classList.remove("Disable");
                     }
                 </script>
 
