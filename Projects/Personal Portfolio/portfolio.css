@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:rgb(5, 5, 36); 
+    color:aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    
+    padding-top:20px;
+    background-color:rgb(4, 4, 57);
+    height:40px;
+    
+}
+.PortfolioName{
+font-size: 25px;
+}
+ul{
+    display:flex;
+    justify-content:space-around;
+}
+li{
+    list-style: none;
+    margin:0px 23px;
+}
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    margin:23px 0;
+}
+.firstSection > div{
+    margin-top:30px;
+    width: 40%;
+    font-size:30px;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:paleturquoise;
+    font-size:1.05rem;
+}
+#Element{
+    color:rgb(133, 89, 175)
+}
+img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(25, 25, 127);
+}
+img:hover{
+    box-shadow: 0px 0px 30px rgb(158, 217, 214);
+    image-resolution:30px;
+}
