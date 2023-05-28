@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/53e0592862.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        class Project{
+            static count=6
+             projectNo(){
+                return ++(Project.count);
+            }
+        }
+        
+        function Edit() {
+            window.location.href = "Edit.html";
+        }
+        function AddProject() {
+            var table = document.getElementById("ProjectTable");
+            let pObj=new Project();
+            var row = table.insertRow(pObj.projectNo());
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell5 = row.insertCell(5);
+            cell1.innerHTML =7;
+            cell2.innerHTML = prompt("Enter your Project name:");
+            cell3.innerHTML = prompt("Enter your Project link:");
+            cell4.innerHTML = prompt("Enter your Project language:");
+            cell5.innerHTML = prompt("Enter your Project Details:");
+
+        }
+
+    </script>
+    <header>
+        <nav>
+            <div class="PortfolioName">
+                <i class="fa-sharp fa-solid fa-briefcase"></i> Nabil's Portfolio
+            </div>
+            <div class="options">
+                <ul>
+                    <li onclick="window.location.href='portfolio.html';">Home</li>
+                    <li onclick="window.location.href='About.html';">About</li>
+                    <li onclick="window.location.href='Favourites.html';">Favourites</li>
+                    <li onclick="window.location.href='Project.html';">Projects</li>
+                    <li onclick="window.location.href='Contact.html';">Contact</li>
+                    <li><i class="fa-solid fa-sun"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="ProjectList">
+        <h1 style="text-align:center;">My Projects</h1>
+        <table border="1" align="center" id="ProjectTable">
+            <tr>
+                <th>Project Serial</th>
+                <th>Project Name</th>
+                <th>Github Link</th>
+                <th>Language</th>
+                <th>Description</th>
+                <th>Edit Details</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Galaxy Travel</td>
+                <td><a href="https://github.com/Iffat-Bin-Hossain/Galaxy_Travel.git">Click</a></td>
+                <td>C++</td>
+                <td>....</td>
+                <td><button type="button" onclick="Edit()">Edit</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>My MDBS</td>
+                <td><a href="https://github.com/Iffat-Bin-Hossain/My_MDBS.git">Click</a></td>
+                <td>Java</td>
+                <td>....</td>
+                <td><button type="button" onclick="Edit()">Edit</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Simple Calculator</td>
+                <td><a
+                        href="https://github.com/Iffat-Bin-Hossain/Web-Development/tree/11924b6bd43f6c371f4ef5f9241cef7993f58b43/Projects/Simple%20Calculator">Click</a>
+                </td>
+                <td>HTML,CSS,Javascript</td>
+                <td>....</td>
+                <td><button type="button" onclick="Edit()">Edit</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Personal Portfolio</td>
+                <td><a
+                        href="https://github.com/Iffat-Bin-Hossain/Web-Development/tree/11924b6bd43f6c371f4ef5f9241cef7993f58b43/Projects/Personal%20Portfolio">Click</a>
+                </td>
+                <td>HTML,CSS,Javascript</td>
+                <td>....</td>
+                <td><button type="button" onclick="Edit()">Edit</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sign In-Up Form</td>
+                <td><a
+                        href="https://github.com/Iffat-Bin-Hossain/Web-Development/tree/11924b6bd43f6c371f4ef5f9241cef7993f58b43/Projects/Sign%20In-Up%20Form">Click</a>
+                </td>
+                <td>HTML,CSS,Javascript</td>
+                <td>....</td>
+                <td><button type="button" onclick="Edit()">Edit</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Trial PyGame</td>
+                <td><a href="https://github.com/Iffat-Bin-Hossain/MY_PYGAME.git">Click</a></td>
+                <td>Python</td>
+                <td>....</td>
+                <td><button type="button" onclick="Edit()">Edit</button></td>
+            </tr>
+        </table>
+
+    </div><br>
+    <div class="AddProject" onclick="AddProject()"><button type="button">Add More</button></div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background-color: black;
+}
+.clock {
+  height: 100px;
+  width: 360px;
+  background-color: rgb(4, 146, 255);
+  background:linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0);
+  border-radius: 10px;
+  margin-top: 300px;
+  text-align: center;
+  animation:animate 1s linear infinite;
+}
+.display {
+  outline: 5px solid rgb(173, 254, 10);
+  height: 100px;
+  width: 360px;
+  border-radius: 10px;
+}
+#time{
+padding: 25px;
+font-size: 40px;
+font-weight: 600;
+color:black;
+letter-spacing: 2px;
+cursor:default
+}
+@keyframes animate {
+    100%{
+        filter:hue-rotate(360deg);
+    }
+    
+}

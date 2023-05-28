@@ -63,28 +63,64 @@ hr {
 }
 .secondSection {
   padding-left: 10%;
-  height: 30vh;
+  height: 70vh;
 }
 .secondSection h1 {
   padding-left: 40%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .Social {
-  padding-left: 36%;
+  padding-left: 28%;
+  width:30%;
   margin-top: 20px;
   font-size: 40px;
+  display:flex;
   justify-content: space-around;
 }
-.github{
-    padding-left: 42%;
-    margin-top: 20px;
-    font-size: 40px;
-    justify-content: space-around;
+.options ul li:hover{
+  color:rgb(149, 135, 238)
 }
 button{
     width:120px;
     font-size:20px;
-    border-radius: 5px;
     background-color: rgb(54, 72, 88);
     color:aliceblue
+}
+button:hover{
+  font-size:21px;
+  background-color: rgb(79, 79, 183);
+}
+address{
+    padding-left:40%;
+    padding-top:15px;
+}
+iframe{
+    padding-left: 30%;
+}
+.ProjectList table{
+  margin-top:50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  
+  
+}
+.AddProject {
+text-align:center;
+margin-top:2%;
+margin-left:23px;
+height:100px;
+}
+.ProjectList h1{
+  padding-top:80px;
+  color:rgb(133, 89, 175);
+}
+.ProjectList th{
+  font-size: 30px;
+  background-color: rgb(44, 62, 111);
+}
+.ProjectList td{
+  padding:50px;
+  text-align: center;
+  width:20%;
+ 
 }
